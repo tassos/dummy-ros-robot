@@ -6,7 +6,7 @@ int main(int argc, char **argv)
 {
   ros::init(argc, argv, "state_publisher");
   ros::NodeHandle n;
-  ros::Publisher state_pub = n.advertise<robot_msgs::joints>("joint_state", 1000);
+  ros::Publisher state_pub = n.advertise<robot_msgs::joints>("joints_state", 1000);
 
   ros::Rate loop_rate(10);
 
