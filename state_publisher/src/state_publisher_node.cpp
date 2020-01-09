@@ -15,10 +15,10 @@ int main(int argc, char **argv)
   {
     robot_msgs::joints msg;
 
-    msg.q1.data = cos(count);
-    msg.q2.data = sin(count);
-    msg.q3.data = 0.5*cos(count*2);
-    msg.q4.data = 0.5*cos(count/2);
+    msg.q1 = cos(count);
+    msg.q2 = sin(count);
+    msg.q3 = 0.5*cos(count*2);
+    msg.q4 = 0.5*cos(count/2);
 
     state_pub.publish(msg);
 
